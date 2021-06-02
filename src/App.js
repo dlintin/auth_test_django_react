@@ -65,13 +65,10 @@ class App extends Component {
       case 'login':
         form = <LoginForm handle_login={this.handle_login} />;
         break;
-      case 'signup':
-        form = <SignupForm handle_signup={this.handle_signup} />;
-        break;
       default:
         form = null;
     }
-
+    
     return (
       <div className="App">
         <Nav
